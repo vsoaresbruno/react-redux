@@ -1,8 +1,8 @@
-export default function courseReducder(state = [] , action) {
+export default function courseReducder(state = [], action) {
   switch (action.type) {
     case "CREATE_COURSE":
-      return [...state, { ...action.course }]
+      return [...state, { ...action.course }];
     default:
-      return state
+      return state;
   }
 }
